@@ -45,10 +45,14 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	/* font-smoothing: antialiased; */
 }
+@font-face {
+	src:url('../fonts/HelveticaNeue.ttc');
+	font-family: 'HelveticaNeue';
+}
 body {
 	background: #ffffff none repeat scroll 0 0;
 	color: #687188;
-	font-family: "Poppins", sans-serif;
+	font-family: "HelveticaNeues", sans-serif;
 	font-size: 16px;
 }
 h1,
@@ -1595,16 +1599,27 @@ button:focus:not(:focus-visible) {
 	position: static;
 }
 .navbar .navbar-nav li.dropdown-mega-menu .dropdown-menu {
-	right: 0;
+	/* right: 0;
 	padding-left: 0;
-	padding-right: 0;
+	padding-right: 0; */
+	width: 100%;
+	position: absolute;
+	left: 0;
 }
+
 .mega-menu-col {
 	border-right: 1px solid #ddd;
 	padding: 0;
 }
 .mega-menu-col:last-child {
 	border-right: 0 !important;
+}
+.accordion-item{
+	display: flex;
+}
+.accordion-body{
+	display: flex;
+	flex-direction: column;
 }
 .dropdown-menu li a i {
 	font-size: 14px;
@@ -7574,3 +7589,4 @@ blockquote p:last-child {
 .input-group > .input-group-append > .btn {
 	height: 100%;
 }
+
