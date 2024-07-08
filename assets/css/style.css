@@ -1592,7 +1592,7 @@ button:focus:not(:focus-visible) {
 	padding: 15px 0;
 	width: 100%;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+	flex-wrap: wrap;	
 }
 .mega-menu ul {
 	-ms-flex-wrap: wrap;
